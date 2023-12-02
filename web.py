@@ -4,11 +4,12 @@ import flask
 
 app = flask.Flask(__name__)
 
+method = ["POST"]
+
 
 @app.route("/")
-
-method=["POST"]
 def index():
     return "Genshin Impact"
+
 
 app.run()
